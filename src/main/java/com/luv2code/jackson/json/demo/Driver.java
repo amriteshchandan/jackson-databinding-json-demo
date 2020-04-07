@@ -10,8 +10,14 @@ public class Driver {
 		
 		try {
 			ObjectMapper objectMapper = new ObjectMapper();
-			Student student = objectMapper.readValue(new File("data/sample-lite.json"), Student.class);
-			System.out.println(student);
+//			Student student1 = objectMapper.readValue(new File("data/sample-lite.json"), Student.class);
+//			System.out.println(student1);
+			
+			
+			
+			Student student2 = objectMapper.readValue(new File("data/sample-full.json"), Student.class);
+			System.out.println(student2);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
